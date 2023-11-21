@@ -3,61 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Indie+Flower&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>Me contacter</title>
 </head>
 <body>
     <header>
-        <div class="containerHeader">
-            <nav role="navigation">
-                <ul>
-                    <li><a href="index.html#presentation">Présentation</a></li>
-                    <li><a href="index.html#competences">Compétences</a></li>
-                    <li><a href="index.html#formation">Formation</a></li>
-                    <li><a href="index.html#experiencesPro">Expériences professionnelles</a></li>
-                    <li><a href="index.html#interets">Intérêts</a></li>
-                    <li><a href="index.html#projets">Projets réalisés</a></li>
-                    <li><a href="contact.html" target="_blank">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav id="menu">
+            <ul class="containerHeader">
+                <li class="itemH itemH1"><a href="#presentation">Présentation</a></li>
+                <li class="itemH itemH2"><a href="#competences">Compétences</a></li>
+                <li class="itemH itemH3"><a href="#formation">Formation</a></li>
+                <li class="itemH itemH4"><a href="#experiencesPro">Expériences professionnelles</a></li>
+                <li class="itemH itemH5"><a href="#interets">Intérêts</a></li>
+                <li class="itemH itemH6"><a href="#projets">Projets réalisés</a></li>
+                <li class="itemH itemH7"><a href="contact.html" target="_blank">Contact</a></li>
+            </ul>
+        </nav>
+        <nav id="menuMobile">
+            <select name="navigationMobile" id="navigationMobile">
+                <option value="index.html">Présentation</option>
+                <option value="#competences">Compétences</option>
+                <option value="#formation">Formation</option>
+                <option value="#experiencesPro">Expériences professionnelles</option>
+                <option value="#interets">Intérêts</option>
+                <option value="#projets">Projets réalisés</option>
+                <option value="contact.html">Contact</option>
+            </select>
+        </nav>
     </header>
     <main>
         <h1>Me contacter</h1>
         <div class="formulaire">
             <form action="traitement.html" method="POST">
-                <label for="nom">Nom :</label>
-                <input type="text" name="nom" id="nom" placeholder="Votre nom" required>
-                <br>
-                <label for="prenom">Prénom :</label>
-                <input type="text" name="prenom" id="prenom" placeholder="Votre prénom" required>
-                <br>
-                <label for="email">Email :</label>
-                <input type="email" name="email" id="email" required>
-                <br>
-                <label for="telephone">Téléphone :</label>
-                <input type="tel" name="telephone" id="telephone" placeholder="0606060606" required maxlength="10">
-                <br>
-                <label for="sujet">Sujet :</label>
-                <input type="text" name="sujet" id="sujet" placeholder="Sujet" required>
-                <br>
-                <legend>Votre message :</legend>
-                <textarea name="message" cols="75" rows="20"></textarea>
-                <br>
-                <button type="submit" name="envoyer">Envoyer</button>
+                <div class="nom">
+                    <label for="nom">Nom :</label>
+                    <input type="text" name="nom" id="nom" placeholder="Votre nom" required>
+                </div>
+                <div class="prenom">
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" name="prenom" id="prenom" placeholder="Votre prénom" required>
+                </div>
+                <div class="email">
+                    <label for="email">Email :</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="telephone">
+                    <label for="telephone">Téléphone :</label>
+                    <input type="tel" name="telephone" id="telephone" placeholder="0606060606" required maxlength="10">
+                </div>
+                <div class="sujet">
+                    <label for="sujet">Sujet :</label>
+                    <input type="text" name="sujet" id="sujet" placeholder="Sujet" required>
+                </div>
+                <div class="message">
+                    <label for="message">Votre message :</label>
+                    <textarea id="message" name="message" cols="75" rows="20"></textarea>
+                </div>
+                <button class="button" type="submit" name="envoyer">Envoyer</button>
             </form>
         </div>    
     </main>
     <footer>
-        <div class="containerFooter">
-            <nav role="navigation">
-                <ul>
-                    <li><a href="mentions.html">Mentions légales</a></li>
-                    <li><a href="cookies.html">Gestionnaire de cookies</a></li>
-                    <li><a href="donnees.html">Données personnelles</a></li>
-                </ul>
-            </nav>
-        </div>
-    </footer>
+        <nav>
+            <ul class="containerFooter">
+                <li class="itemF itemF1"><a href="mentions.html">Mentions légales</a></li>
+                <li class="itemF itemF2"><a href="cookies.html">Gestionnaire de cookies</a></li>
+                <li class="itemF itemF3"><a href="donnees.html">Données personnelles</a></li>
+            </ul>
+        </nav>
+</footer>
 </body>
 </html>

@@ -3,50 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Indie+Flower&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>Curriculum Vitae</title>
 </head>
 <body>
     <header>
-        <div class="containerHeader">
-            <nav role="navigation">
-                <ul>
-                    <li><a href="#presentation">Présentation</a></li>
-                    <li><a href="#competences">Compétences</a></li>
-                    <li><a href="#formation">Formation</a></li>
-                    <li><a href="#experiencesPro">Expériences professionnelles</a></li>
-                    <li><a href="#interets">Intérêts</a></li>
-                    <li><a href="#projets">Projets réalisés</a></li>
-                    <li><a href="contact.html" target="_blank">Contact</a></li>
+            <nav id="menu">
+                <ul class="containerHeader">
+                    <li class="itemH itemH1"><a href="#presentation">Présentation</a></li>
+                    <li class="itemH itemH2"><a href="#competences">Compétences</a></li>
+                    <li class="itemH itemH3"><a href="#formation">Formation</a></li>
+                    <li class="itemH itemH4"><a href="#experiencesPro">Expériences professionnelles</a></li>
+                    <li class="itemH itemH5"><a href="#interets">Intérêts</a></li>
+                    <li class="itemH itemH6"><a href="#projets">Projets réalisés</a></li>
+                    <li class="itemH itemH7"><a href="contact.html" target="_blank">Contact</a></li>
                 </ul>
             </nav>
-        </div>
+            <nav id="menuMobile">
+                <select name="navigationMobile" id="navigationMobile">
+                    <option value="index.html">Présentation</option>
+                    <option value="#competences">Compétences</option>
+                    <option value="#formation">Formation</option>
+                    <option value="#experiencesPro">Expériences professionnelles</option>
+                    <option value="#interets">Intérêts</option>
+                    <option value="#projets">Projets réalisés</option>
+                    <option value="contact.html">Contact</option>
+                </select>
+            </nav>
     </header>
     <main>
         <div class="containerMain">
-            <section id="presentation">
+            <section class="itemM itemM1" id="presentation">
                 <h1>Cécile Louisy</h1>
-                <img src="assets/img/cecile.png" alt="ma photo" title="Ma photo">
+                <img src="assets/img/cecile.png" alt="ma photo" title="Ma photo" >
                 <h2>Développeur Web et Web Mobile</h2>
                 <p>J'aime comprendre les besoins, créer des solutions sur mesure, optimiser les pratiques avec un bon esprit d'analyse et de synthèse.</p>
                 <p>Je recherche une alternance d'un an pour un Bachelor Informatique Concepteur de Systèmes d'Information, de Septembre 2024 à Juillet 2025.</p>
             </section>
-            <section id="competences">
-                <h2>Compétences</h2>
-                <ul>
-                    <li>Curiosité intellectuelle développée</li>
-                    <li>Autonomie élevée</li>
-                    <li>Organisation et rigueur dans le travail fourni</li>
-                    <li>Communication et travail en équipe rapide et efficace</li>
-                    <li>Adaptation à chaque personne et situation</li>
-                </ul>
-                <h3>Langues</h3>
-                <ul>
-                    <li>Français : langue maternelle</li>
-                    <li>Anglais : niveau B2+</li>
-                </ul>
+            <section class="itemM itemM2" id="competences">
+                    <h2>Compétences</h2>
+                    <ul>
+                        <li>Curiosité intellectuelle développée</li>
+                        <li>Autonomie élevée</li>
+                        <li>Organisation et rigueur dans le travail fourni</li>
+                        <li>Communication et travail en équipe rapide et efficace</li>
+                        <li>Adaptation à chaque personne et situation</li>
+                    </ul>
+                    <h3>Langues</h3>
+                    <ul>
+                        <li>Français : langue maternelle</li>
+                        <li>Anglais : niveau B2+</li>
+                    </ul>
             </section>
-            <section id="formation">
+            <section class="itemM itemM3" id="formation">
                 <h2>Formation</h2>
                 <h3>Titre Professionnel de Développeur Web et Web Mobile</h3>
                 <p>Chambre de Commerce et d'Industrie du Cher</p>
@@ -62,7 +74,7 @@
                 <h3>Baccalauréat Scientifique spécialité Mathématiques</h3>
                 <p>Lycée Charles Péguy - Orléans - 2007</p>
             </section>
-            <section id="experiencesPro">
+            <section class="itemM itemM4" id="experiencesPro">
                 <h2>Expériences professionnelles</h2>
                 <h3>Stage en Développement Informatique</h3>
                     <p>Boréal Business - Bourges - avril à juin 2024</p>
@@ -89,21 +101,21 @@
                     <li>Gestion d'une caisse</li>
                 </ul>
             </section>
-            <section id="interets">
+            <section class="itemM itemM5" id="interets">
                 <h2>Intérêts</h2>
-                    <h5><aabr title="Arts Martiaux Historiques Européens">AMHE</aabr> - Escrime Artistique</h5>
+                    <h5>Arts Martiaux Historiques Européens- Escrime Artistique</h5>
                         <details>
                             <summary>Démonstration de sabre laser pour l'avant-première de Star Wars en 2019</summary>
                                 <figure>
                                     <img src="assets/img/starwars.jpg" alt="photo des lames du phénix">
                                     <figcaption>Les Lames du Phénix du Bourges Escrimes</figcaption>
                                 </figure>
-                                <video src="assets/video/avantpremierestarwars.mp4" controls alt="Démonstration de sabre laser" title="Démonstration de sabre laser"></video>
+                                <video src="assets/video/avantpremierestarwars.mp4" controls title="Démonstration de sabre laser"></video>
                         </details>
                     <h5>Danse Country</h5>
                         <details>
                             <summary>Mon objectif <small>(avec beaucoup beaucoup d'entraînement ^^')</small></summary>
-                            <a href="https://www.youtube.com/watch?v=zdi8yqDWmCk" alt="Fake ID Line Dance" target="_blank">Fake ID Line Dance</a>
+                            <a href="https://www.youtube.com/watch?v=zdi8yqDWmCk" title="Fake ID Line Dance" target="_blank">Fake ID Line Dance</a>
                         </details>
                     <h5>Jeux de rôle sur table ou Grandeur Nature</h5>
                         <details>
@@ -118,28 +130,26 @@
                     <h5>Jeux en ligne</h5>
                     <h5>Lecture</h5>
             </section>
-            <section id="projets">
+            <section class="itemM itemM6" id="projets">
                 <h2>Projets réalisés</h2>
                 <p>Ici je vous partagerai les projets réalisés.</p>
             </section>
-            <div class="chargecv">
-                <a href="assets/doc/curriculumVitaeCecileLouisy.pdf" alt="cv en pdf" target="_blank">Télécharger mon CV en pdf</a>
+            <div class="itemM itemM7">
+                <a href="assets/doc/curriculumVitaeCecileLouisy.pdf" target="_blank">Télécharger mon CV en pdf</a>
             </div>
-            <div class="retour">
+            <div class="itemM itemM8">
                 <a href="#presentation"><img src="assets/img/chatdescente.png" alt="retour haut de page"></a>
             </div>
         </div>
     </main>
     <footer>
-        <div class="containerFooter">
-            <nav role="navigation">
-                <ul>
-                    <li><a href="mentions.html">Mentions légales</a></li>
-                    <li><a href="cookies.html">Gestionnaire de cookies</a></li>
-                    <li><a href="donnees.html">Données personnelles</a></li>
+            <nav>
+                <ul class="containerFooter">
+                    <li class="itemF itemF1"><a href="mentions.html">Mentions légales</a></li>
+                    <li class="itemF itemF2"><a href="cookies.html">Gestionnaire de cookies</a></li>
+                    <li class="itemF itemF3"><a href="donnees.html">Données personnelles</a></li>
                 </ul>
             </nav>
-        </div>
     </footer>
 </body>
 </html>
