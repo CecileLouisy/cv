@@ -1,252 +1,147 @@
-/*Les polices :
-font-family: 'Glass Antiqua', cursive;
-font-family: 'Indie Flower', cursive;
+/*Fonts :
+font-family: 'Lugrasimo', cursive;
 font-family: 'Roboto', sans-serif;
 */
-
-*{
+* {
     margin : 0;
     padding : 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
-
 #menuMobile {
     display: none;
 }
-
-header {
-    background-color: antiquewhite;
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/*design of header and footer*/
+header, footer {
+    background: #45afe7;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(69,175,231,0.8820320364473915) 100%);
     position: sticky;
     top:0;
     width: 100%;
-    
 }
-.containerHeader {
+footer {
+    background: linear-gradient(90deg, rgba(69,175,231,0.8820320364473915) 0%, rgba(255,255,255,1) 100%);/*inverse gradient from header*/
+    bottom:0;
+}
+.containerHeader, .containerFooter {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
-.itemH {
-    padding: 15px;
-    
-}
-
-.itemH:hover{
-    font-weight: bold;
-}
-
-header nav ul li {
-    list-style: none;
-    
-}
-header nav ul li a{
-    border-radius: 15px;
-    background-color: rgb(255, 192, 245);
-    padding:10px;
-    text-decoration: none;
-    color: #0d0d0d;
-    font-size: 20px;
-    border: 1px solid #ffffff
-    
-} /*Fin header*/
-
-main {
-    background-color: rgb(251, 251, 251);
-    width: 100%;
-    
-    
-}
-
-.containerMain {
-    display: grid;
-    grid-template-columns:0.15fr 1fr 0.15fr; 
-    grid-template-rows: 1fr 0.5fr 1fr 1fr 0.5fr 0.25fr 0.5fr; 
-    gap: 5px 5%; 
-    grid-template-areas: 
-    ". presentation ."
-    ". competences ."
-    ". formation . "
-    ". experiencesPro ."
-    ". interets ."
-    ". projets ."
-    ". downloadcv retour"; 
-}
-
-#presentation { 
-    grid-area: presentation;
-    background-color: rgb(206, 241, 230);
- }
-#competences { 
-    grid-area: competences; 
-    background-color: #f2c3c3;
-}
-#formation { 
-    grid-area: formation;
-    background-color: rgb(206, 241, 230);
- }
-#experiencesPro {
-     grid-area: experiencesPro; 
-    }
-#interets {
-     grid-area: interets; 
-     background-color: rgb(206, 241, 230);
-     text-align: center;
-    }
-#projets { 
-    grid-area: projets; 
-}
-.itemM7 { 
-    grid-area: downloadcv; 
-    
-  
-}
-
-.itemM7 a{
-    background-color: #f2c3c3;
-    padding: 5%;
-    border-radius: 10px;
-    box-shadow:10px #aea8a8; /*à revoir*/
-}
-.itemM8 { 
-    grid-area: retour; 
-}
-
-.itemM {
-   justify-items: center; 
-}
-
-h1, h2, h3{
-    text-align: center;
-    margin-top: 10px;
-    font-family: 'Glass Antiqua', cursive;
-}
-
-h1 {
-    color :blue;
-    font-weight: 400;
-    font-size: 3em;
-}
-
-h2 {
-    color: rgba(0, 123, 255, 0.564);
-    font-size: 2em;
-}
-
-h3 {
-    font-size: 1.5em;
-}
-
-p {
-    font-family: 'Indie Flower', cursive;
-    font-size: 1.2em;
-}
-
-li {
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    list-style: none;
-    font-size : 1.2em;
-}
- h5 {
-    font-size: 1.5em;
- }
-a {
-    text-decoration: none;
-}
-
-.itemM8:hover{
-    background: url("assets/img/chatmontee.png");/* à revoir*/
-}
-
-/*Fin main*/
-footer {
-    background-color: antiquewhite;
-    position: sticky;
-    bottom:0;
-    width: 100%;
-}
-
 .containerFooter {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 20px;
 }
-.itemF {
+.itemH, .itemF {
     padding: 15px;
-    
 }
-footer nav ul li {
-    list-style: none;
-}
-footer nav ul li a {
-    border-radius: 15px;
-    background-color: rgb(255, 192, 245);
+header nav ul li a, footer nav ul li a {
     padding:10px;
-    text-decoration: none;
     color: #0d0d0d;
-    font-size: 20px;
+    font-size: 1.2em;
+    border-radius: 15px;
     border: 1px solid #ffffff
 }
- /*Formulaire*/
- .formulaire {
+header nav ul li a:hover, footer nav ul li a:hover {
+    background-color: #ffffff;
+    color:#45afe7
+}
+/*design main*/
+.containerMain {  
+    background-color: tomato;
+    width:100%;
     display: grid;
-    grid-template-columns:0.15fr 1fr 1fr 0.15fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
-    gap: 5px 5%; 
-    grid-template-areas: 
-    ". nom sujet ."
-    ". prenom message ."
-    ". email message ."
-    ". telephone message ."
-    ". envoyer . ."; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "titre titre titre"
+      "citation citation citation"
+      "valeurAjoutee valeurAjoutee photo"
+      "competences competences langues"
+      "formation formation formation"
+      "tp tp tp"
+      "dts dts bafa"
+      "bac bac bac"
+      "experience experience experience"
+      "stage stage stage"
+      "manip manip manip"
+      "etudiant etudiant etudiant"
+      "anim caisse ."
+      "interets interets interets"
+      "amhe danse jdr"
+      "jeux lecture ."
+      "projets projets projets"
+      "exemple exemple exemple"
+      "cvpdf cvpdf retour";
 }
-
-.nom { 
-    grid-area: nom;
+  
+  .titre { 
+    grid-area: titre;
+    background-color: blue;
+    
+    
     
  }
- .sujet { 
-    grid-area: sujet;
-    
- }
- .prenom { 
-    grid-area: prenom;
-    
- }
- .message { 
-    grid-area: message;
-    
- }
- .email { 
-    grid-area: email;
-    
- }
- .telephone { 
-    grid-area: telephone;
-    
- }
+  
+  .citation { grid-area: citation; background-color: red;}
+  
+  .valeurAjoutee { grid-area: valeurAjoutee; background-color: pink;}
+  
+  .photo { grid-area: photo;background-color: violet; }
+  
+  .competences { grid-area: competences; background-color: green;}
+  
+  .langues { grid-area: langues;background-color: greenyellow; }
+  
+  .formation { grid-area: formation; background-color: yellow;}
+  
+  .tp { grid-area: tp;background-color: purple; }
+  
+  .dts { grid-area: dts; background-color: lightseagreen; }
+  
+  .bafa { grid-area: bafa; background-color: lightslategray;}
+  
+  .bac { grid-area: bac;background-color: orange;}
+  
+  .experience { grid-area: experience; background-color: burlywood;}
+  
+  .stage { grid-area: stage; background-color: lawngreen;}
+  
+  .manip { grid-area: manip;background-color: fuchsia; }
+  
+  .etudiant { grid-area: etudiant; background-color: darkgoldenrod;}
+  
+  .anim { grid-area: anim;background-color: powderblue; }
+  
+  .caisse { grid-area: caisse;background-color: palegreen; }
+  
+  .interets { grid-area: interets;background-color: slateblue; }
+  
+  .amhe { grid-area: amhe;background-color: silver; }
+  
+  .danse { grid-area: danse; background-color: lavender;}
+  
+  .jdr { grid-area: jdr;background-color: olivedrab; }
+  
+  .jeux { grid-area: jeux;background-color: maroon; }
+  
+  .lecture { grid-area: lecture; background-color: mediumvioletred;}
+  
+  .projets { grid-area: projets;background-color: midnightblue; }
+  
+  .exemple { grid-area: exemple;background-color: aqua; }
+  
+  .cvpdf { grid-area: cvpdf;background-color: aquamarine; }
+  
+  .retour { grid-area: retour; background-color: gold;}
 
- .button {
-    grid-area: envoyer;
- }
-
-
-
-
-
-
-
-@media (max-width:700px){
-    #menu {
-        display: none;
-    }
-    #menuMobile {
-        display: block;
-        width: 100vh;
-    }
-
-    #menuMobile select {
-        width: 95%;
-    }
-}
+  .itemM{
+    width: 100%;
+  }
+  

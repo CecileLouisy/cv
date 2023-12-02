@@ -1,0 +1,243 @@
+/*Fonts :
+font-family: 'Lugrasimo', cursive;
+font-family: 'Roboto', sans-serif;
+
+*/
+
+/**{
+    margin : 0;
+    padding : 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#menuMobile {
+    display: none;
+}
+
+header {
+    background: rgb(69,175,231);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(69,175,231,0.8820320364473915) 100%);
+    position: sticky;
+    top:0;
+    width: 100%;
+    
+}
+.containerHeader {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.itemH {
+    padding: 15px;
+}
+
+.itemH:hover, .itemF:hover{
+    font-weight: bold;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header nav ul li a, footer nav ul li a {
+    border-radius: 15px;
+    
+    padding:10px;
+    text-decoration: none;
+    color: #0d0d0d;
+    font-size: 20px;
+    border: 1px solid #ffffff
+    
+}*/ /*Fin header*/
+
+main {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    
+    
+}
+
+.containerMain {
+    display: grid;
+    grid-template-columns:0.15fr 1fr 0.15fr; 
+    grid-template-rows: 1fr 0.5fr 1fr 1fr 0.5fr 0.25fr 0.5fr; 
+    gap: 5px 5%; 
+    grid-template-areas: 
+    ". presentation ."
+    ". competences ."
+    ". formation . "
+    ". experiencesPro ."
+    ". interets ."
+    ". projets ."
+    ". downloadcv retour"; 
+}
+
+#presentation { 
+    grid-area: presentation;
+    background-color: rgb(206, 241, 230);
+ }
+#competences { 
+    grid-area: competences; 
+    background-color: #f2c3c3;
+}
+#formation { 
+    grid-area: formation;
+    background-color: rgb(206, 241, 230);
+ }
+#experiencesPro {
+     grid-area: experiencesPro; 
+    }
+#interets {
+     grid-area: interets; 
+     background-color: rgb(206, 241, 230);
+     text-align: center;
+    }
+#projets { 
+    grid-area: projets; 
+}
+.itemM7 { 
+    grid-area: downloadcv; 
+    
+  
+}
+
+.itemM7 a{
+    background-color: #f2c3c3;
+    padding: 5%;
+    border-radius: 10px;
+    box-shadow:10px #aea8a8; /*à revoir*/
+}
+.itemM8 { 
+    grid-area: retour; 
+}
+
+.itemM {
+   justify-items: center; 
+}
+
+h1, h2, h3{
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+h1 {
+    
+    font-weight: 400;
+    font-size: 3em;
+}
+
+h2 {
+    
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.2em;
+}
+
+
+
+ h5 {
+    font-size: 1.5em;
+ }
+
+
+.itemM8:hover{
+    background: url("assets/img/chatmontee.png");/* à revoir*/
+}
+
+/*Fin main*/
+/*footer {
+    background: rgb(69,175,231);
+    background: linear-gradient(90deg, rgba(69,175,231,0.8820320364473915) 0%, rgba(255,255,255,1) 100%);
+    position: sticky;
+    bottom:0;
+    width: 100%;
+}
+
+.containerFooter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.itemF {
+    padding: 15px;
+    
+}*/
+
+
+
+ /*Formulaire*/
+ .formulaire {
+    display: grid;
+    grid-template-columns:0.15fr 1fr 1fr 0.15fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+    gap: 5px 5%; 
+    grid-template-areas: 
+    ". nom sujet ."
+    ". prenom message ."
+    ". email message ."
+    ". telephone message ."
+    ". envoyer . ."; 
+}
+
+.nom { 
+    grid-area: nom;
+    
+ }
+ .sujet { 
+    grid-area: sujet;
+    
+ }
+ .prenom { 
+    grid-area: prenom;
+    
+ }
+ .message { 
+    grid-area: message;
+    
+ }
+ .email { 
+    grid-area: email;
+    
+ }
+ .telephone { 
+    grid-area: telephone;
+    
+ }
+
+ .button {
+    grid-area: envoyer;
+ }
+
+
+
+
+
+
+
+@media (max-width:700px){
+    #menu {
+        display: none;
+    }
+    #menuMobile {
+        display: block;
+        width: 100vh;
+    }
+
+    #menuMobile select {
+        width: 95%;
+    }
+}
