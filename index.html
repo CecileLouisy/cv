@@ -6,20 +6,20 @@
     <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Indie+Flower&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&family=Roboto&display=swap" rel="stylesheet">
     <title>Curriculum Vitae</title>
 </head>
 <body>
     <header>
             <nav id="menu">
                 <ul class="containerHeader">
-                    <li class="itemH itemH1"><a href="#presentation">Présentation</a></li>
-                    <li class="itemH itemH2"><a href="#competences">Compétences</a></li>
-                    <li class="itemH itemH3"><a href="#formation">Formation</a></li>
-                    <li class="itemH itemH4"><a href="#experiencesPro">Expériences professionnelles</a></li>
-                    <li class="itemH itemH5"><a href="#interets">Intérêts</a></li>
-                    <li class="itemH itemH6"><a href="#projets">Projets réalisés</a></li>
-                    <li class="itemH itemH7"><a href="contact.html" target="_blank">Contact</a></li>
+                    <li class="itemH"><a href="#presentation">Présentation</a></li>
+                    <li class="itemH"><a href="#competences">Compétences</a></li>
+                    <li class="itemH"><a href="#formation">Formation</a></li>
+                    <li class="itemH"><a href="#experiencesPro">Expériences professionnelles</a></li>
+                    <li class="itemH"><a href="#interets">Intérêts</a></li>
+                    <li class="itemH"><a href="#projets">Projets réalisés</a></li>
+                    <li class="itemH"><a href="contact.html" target="_blank">Contact</a></li>
                 </ul>
             </nav>
             <nav id="menuMobile">
@@ -36,30 +36,41 @@
     </header>
     <main>
         <div class="containerMain">
-            <section class="itemM itemM1" id="presentation">
+            <div class="itemM titre" id="presentation">
                 <h1>Cécile Louisy</h1>
+                <h2>Développeur Web & Web Mobile</h2>
+            </div>
+            <div class="itemM citation">
+                <p><q>Le développement informatique est l'art de manier les langages de programmation pour créer le monde de demain.</q></p>
+            </div>
+            <div class="itemM photo">    
                 <img src="assets/img/cecile.png" alt="ma photo" title="Ma photo" >
-                <h2>Développeur Web et Web Mobile</h2>
+            </div>
+            <div class="itemM valeurAjoutee">
                 <p>J'aime comprendre les besoins, créer des solutions sur mesure, optimiser les pratiques avec un bon esprit d'analyse et de synthèse.</p>
                 <p>Je recherche une alternance d'un an pour un Bachelor Informatique Concepteur de Systèmes d'Information, de Septembre 2024 à Juillet 2025.</p>
-            </section>
-            <section class="itemM itemM2" id="competences">
-                    <h2>Compétences</h2>
-                    <ul>
-                        <li>Curiosité intellectuelle développée</li>
-                        <li>Autonomie élevée</li>
-                        <li>Organisation et rigueur dans le travail fourni</li>
-                        <li>Communication et travail en équipe rapide et efficace</li>
-                        <li>Adaptation à chaque personne et situation</li>
-                    </ul>
-                    <h3>Langues</h3>
-                    <ul>
-                        <li>Français : langue maternelle</li>
-                        <li>Anglais : niveau B2+</li>
-                    </ul>
-            </section>
-            <section class="itemM itemM3" id="formation">
+            </div>
+            <div class="itemM competences" id="competences">
+                <h2>Compétences</h2>
+                <ul>
+                    <li>Curiosité intellectuelle développée</li>
+                    <li>Autonomie élevée</li>
+                    <li>Organisation et rigueur dans le travail fourni</li>
+                    <li>Communication et travail en équipe rapide et efficace</li>
+                    <li>Adaptation à chaque personne et situation</li>
+                </ul>
+            </div> 
+            <div class="itemM langues">  
+                <h3>Langues</h3>
+                <ul>
+                    <li>Français : langue maternelle</li>
+                    <li>Anglais : niveau B2+</li>
+                </ul>
+            </div>     
+            <div class="itemM formation" id="formation">
                 <h2>Formation</h2>
+            </div>
+            <div class="itemM tp">
                 <h3>Titre Professionnel de Développeur Web et Web Mobile</h3>
                 <p>Chambre de Commerce et d'Industrie du Cher</p>
                 <p>Septembre 2023 à Juillet 2024</p>
@@ -67,20 +78,30 @@
                     <li>Développer la partie front-end et back-end d'une application web ou web mobile sécurisée.</li>
                     <li>Réalisation d'un projet professionnel (demande client).</li>
                 </ul>
+            </div>
+            <div class="itemM dts">
                 <h3><abbr title="Diplôme de Technicien Supérieur">DTS</abbr> en Imagerie Médicale option Anglais</h3>
                 <p>Lycée Voltaire - Orléans - 2010-2013</p>
+            </div>
+            <div class="itemM bafa">
                 <h3>Brevet d'Aptitude aux Fonctions d'Animateur</h3>
                 <p>Orléans - 2008</p>
+            </div>
+            <div class="itemM bac">
                 <h3>Baccalauréat Scientifique spécialité Mathématiques</h3>
                 <p>Lycée Charles Péguy - Orléans - 2007</p>
-            </section>
-            <section class="itemM itemM4" id="experiencesPro">
+            </div>
+            <div class="itemM experience" id="experiencesPro">
                 <h2>Expériences professionnelles</h2>
+            </div>
+            <div class="itemM stage">
                 <h3>Stage en Développement Informatique</h3>
-                    <p>Boréal Business - Bourges - avril à juin 2024</p>
-                    <ul>
-                        <li>Validation des acquis vu en Formation Développeur Web et Web Mobile</li>
-                    </ul>
+                <p>Boréal Business - Bourges - avril à juin 2024</p>
+                <ul>
+                    <li>Validation des acquis vu en Formation Développeur Web et Web Mobile</li>
+                </ul>
+            </div>
+            <div class="itemM manip">
                 <h3>Manipulatrice en radiologie</h3>
                 <p>SELARL Jean de Berry - Bourges - 2013-2023</p>
                 <ul>
@@ -89,55 +110,74 @@
                     <li>Prise en charge de stagiaires et d'alternants.</li>
                 </ul>
                 <a href="https://www.youtube.com/watch?v=k0TIpN8orh4&t=1s" target="_blank">En savoir plus sur le métier de manipulateur en radiologie</a>
+            </div>
+            <div class="itemM etudiant">
+                <h3>Emplois Étudiant</h3>
+            </div>
+            <div class="itemM anim">
                 <h3>Animatrice en centre de loisirs</h3>
-                <p>Emploi Étudiant - ASELQO Orléans - 2010</p>
+                <p>ASELQO Orléans - 2010</p>
                 <ul>
                     <li>Organisation et mise en œuvre d'activités récréatives auprès d'enfants.</li>
                 </ul>
+            </div>
+            <div class="itemM caisse">
                 <h3>Hôtesse de caisse</h3>
-                <p>Emploi Étudiant - E. Leclerc Olivet - 2019</p>
+                <p>E. Leclerc Olivet - 2019</p>
                 <ul>
                     <li>Accueil des clients</li>
                     <li>Gestion d'une caisse</li>
                 </ul>
-            </section>
-            <section class="itemM itemM5" id="interets">
+            </div>
+            <div class="itemM interets" id="interets">
                 <h2>Intérêts</h2>
-                    <h5>Arts Martiaux Historiques Européens- Escrime Artistique</h5>
-                        <details>
-                            <summary>Démonstration de sabre laser pour l'avant-première de Star Wars en 2019</summary>
-                                <figure>
-                                    <img src="assets/img/starwars.jpg" alt="photo des lames du phénix">
-                                    <figcaption>Les Lames du Phénix du Bourges Escrimes</figcaption>
-                                </figure>
-                                <video src="assets/video/avantpremierestarwars.mp4" controls title="Démonstration de sabre laser"></video>
-                        </details>
-                    <h5>Danse Country</h5>
-                        <details>
-                            <summary>Mon objectif <small>(avec beaucoup beaucoup d'entraînement ^^')</small></summary>
-                            <a href="https://www.youtube.com/watch?v=zdi8yqDWmCk" title="Fake ID Line Dance" target="_blank">Fake ID Line Dance</a>
-                        </details>
-                    <h5>Jeux de rôle sur table ou Grandeur Nature</h5>
-                        <details>
-                            <summary>Découvrir</summary>
+            </div>
+            <div class="itemM amhe">
+                <h5>Arts Martiaux Historiques Européens- Escrime Artistique</h5>
+                    <details>
+                        <summary>Démonstration de sabre laser pour l'avant-première de Star Wars en 2019</summary>
                             <figure>
-                                <img src="assets/img/jdr.png" alt="jeu de role sur table" title="Le jeu de rôle sur table">
-                                <figcaption>Le Jeu de rôle sur Table</figcaption></figure>
-                            <figure>
-                                <img src="assets/img/gn.png" alt="jeu de role grandeur nature" title="Le jeu de rôle grandeur nature">
-                                <figcaption>Le Jeu de rôle Grandeur Nature</figcaption></figure>
-                        </details>
-                    <h5>Jeux en ligne</h5>
-                    <h5>Lecture</h5>
-            </section>
-            <section class="itemM itemM6" id="projets">
-                <h2>Projets réalisés</h2>
-                <p>Ici je vous partagerai les projets réalisés.</p>
-            </section>
-            <div class="itemM itemM7">
+                                <img src="assets/img/starwars.jpg" alt="photo des lames du phénix">
+                                <figcaption>Les Lames du Phénix du Bourges Escrimes</figcaption>
+                            </figure>
+                            <video src="assets/video/avantpremierestarwars.mp4" controls title="Démonstration de sabre laser"></video>
+                    </details>
+            </div>
+            <div class="itemM danse">
+                <h5>Danse Country</h5>
+                    <details>
+                        <summary>Mon objectif <small>(avec beaucoup beaucoup d'entraînement ^^')</small></summary>
+                        <a href="https://www.youtube.com/watch?v=zdi8yqDWmCk" title="Fake ID Line Dance" target="_blank">Fake ID Line Dance</a>
+                    </details>
+            </div>
+            <div class="itemM jdr">
+                <h5>Jeux de rôle sur table ou Grandeur Nature</h5>
+                    <details>
+                        <summary>Découvrir</summary>
+                        <figure>
+                            <img src="assets/img/jdr.png" alt="jeu de role sur table" title="Le jeu de rôle sur table">
+                            <figcaption>Le Jeu de rôle sur Table</figcaption></figure>
+                        <figure>
+                            <img src="assets/img/gn.png" alt="jeu de role grandeur nature" title="Le jeu de rôle grandeur nature">
+                            <figcaption>Le Jeu de rôle Grandeur Nature</figcaption></figure>
+                    </details>
+            </div>
+            <div class="itemM jeux">
+                <h5>Jeux en ligne</h5>
+            </div>
+            <div class="itemM lecture">
+                <h5>Lecture</h5>
+            </div>
+                <div class="itemM projets" id="projets">
+                    <h2>Projets réalisés</h2>
+                </div>
+                <div class="itemM exemple">
+                    <p>Ici je vous partagerai les projets réalisés.</p>
+                </div>
+            <div class="itemM cvpdf">
                 <a href="assets/doc/curriculumVitaeCecileLouisy.pdf" target="_blank">Télécharger mon CV en pdf</a>
             </div>
-            <div class="itemM itemM8">
+            <div class="itemM retour">
                 <a href="#presentation"><img src="assets/img/chatdescente.png" alt="retour haut de page"></a>
             </div>
         </div>
@@ -145,9 +185,9 @@
     <footer>
             <nav>
                 <ul class="containerFooter">
-                    <li class="itemF itemF1"><a href="mentions.html">Mentions légales</a></li>
-                    <li class="itemF itemF2"><a href="cookies.html">Gestionnaire de cookies</a></li>
-                    <li class="itemF itemF3"><a href="donnees.html">Données personnelles</a></li>
+                    <li class="itemF"><a href="mentions.html">Mentions légales</a></li>
+                    <li class="itemF"><a href="cookies.html">Gestionnaire de cookies</a></li>
+                    <li class="itemF"><a href="donnees.html">Données personnelles</a></li>
                 </ul>
             </nav>
     </footer>
