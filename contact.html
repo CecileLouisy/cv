@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/contact.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Indie+Flower&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>Me contacter</title>
 </head>
 <body>
@@ -21,27 +25,27 @@
         </nav>
         <nav id="menuMobile">
             <select name="navigationMobile" id="navigationMobile">
-                <option value="index.html">Présentation</option>
-                <option value="#competences">Compétences</option>
-                <option value="#formation">Formation</option>
-                <option value="#experiencesPro">Expériences professionnelles</option>
-                <option value="#interets">Intérêts</option>
-                <option value="#projets">Projets réalisés</option>
+                <option value="index.html?#presentation">Présentation</option>
+                <option value="index.html?#competences">Compétences</option>
+                <option value="index.html?#formation">Formation</option>
+                <option value="index.html?#experiencesPro">Expériences professionnelles</option>
+                <option value="index.html?#interets">Intérêts</option>
+                <option value="index.html?#projets">Projets réalisés</option>
                 <option value="contact.html">Contact</option>
             </select>
         </nav>
     </header>
     <main>
         <h1>Me contacter</h1>
-        <div class="formulaire">
-            <form action="traitement.html" method="POST">
+        <form action="traitement.html" method="POST">
+            <div class="formulaire">
                 <div class="nom">
                     <label for="nom">Nom :</label>
-                    <input type="text" name="nom" id="nom" placeholder="Votre nom" required>
+                    <input type="text" name="nom" id="nom" required>
                 </div>
                 <div class="prenom">
                     <label for="prenom">Prénom :</label>
-                    <input type="text" name="prenom" id="prenom" placeholder="Votre prénom" required>
+                    <input type="text" name="prenom" id="prenom" required>
                 </div>
                 <div class="email">
                     <label for="email">Email :</label>
@@ -49,19 +53,20 @@
                 </div>
                 <div class="telephone">
                     <label for="telephone">Téléphone :</label>
-                    <input type="tel" name="telephone" id="telephone" placeholder="0606060606" required maxlength="10">
+                    <input type="tel" name="telephone" id="telephone" required maxlength="10">
                 </div>
                 <div class="sujet">
                     <label for="sujet">Sujet :</label>
-                    <input type="text" name="sujet" id="sujet" placeholder="Sujet" required>
+                    <input type="text" name="sujet" id="sujet"required>
                 </div>
                 <div class="message">
                     <label for="message">Votre message :</label>
-                    <textarea id="message" name="message" cols="75" rows="20"></textarea>
+                    <br>
+                    <textarea id="message" name="message" cols="75" rows="10"></textarea>
                 </div>
                 <button class="button" type="submit" name="envoyer">Envoyer</button>
-            </form>
-        </div>    
+            </div>
+        </form>        
     </main>
     <footer>
         <nav>

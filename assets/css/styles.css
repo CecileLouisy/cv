@@ -277,13 +277,14 @@ details {
    bottom: 70px;
    right: 10px;
    width: 100px;
-    
-    
 }
 #retour:hover{
     content: url("../img/chatmontee.png");
     cursor: pointer;
     width: 100px;
+}
+.enConstruction, .merci {
+    font-size: 3em;
 }
 @media (max-width:700px){
     #menu {
