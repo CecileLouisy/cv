@@ -1,13 +1,14 @@
 /*Fonts :
-font-family: 'Lugrasimo', cursive;
-font-family: 'Roboto', sans-serif;
+font-family: 'Oregano', cursive;
+font-family: 'Literata', serif;
 */
 * {
     margin : 0;
     padding : 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
+    font-family: 'Literata', serif;
+    color:#414141;
+}    
 #menuMobile {
     display: none;
 }
@@ -20,13 +21,13 @@ a {
 /*design of header and footer*/
 header, footer {
     background: #45afe7;
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(69,175,231,0.8820320364473915) 100%);
+    background: linear-gradient(90deg, #eeeeee 0%, rgba(69,175,231,0.8820320364473915) 100%);
     position: sticky;
     top:0;
     width: 100%;
 }
 footer {
-    background: linear-gradient(90deg, rgba(69,175,231,0.8820320364473915) 0%, rgba(255,255,255,1) 100%);/*inverse gradient from header*/
+    background: linear-gradient(90deg, #45afe7e1 0%, #eeeeee 100%);/*inverse gradient from header*/
     bottom:0;
 }
 .containerHeader, .containerFooter {
@@ -53,16 +54,16 @@ header nav ul li a:hover, footer nav ul li a:hover {
 }
 /*design main*/
 .containerMain {  
-    background-color: tomato;
+    background-color: #eeeeee;
     width:100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 0.25fr 0.25fr 0.7fr 0.25fr 0.5fr 0.3fr 0.3fr 0.4fr 0.4fr 0.6fr 0.15fr 0.3fr 0.3fr 0.25fr 0.25fr 0.2fr 0.3fr 0.4fr;
     gap: 0px 0px;
     grid-template-areas:
       "titre titre titre"
       "citation citation citation"
-      "valeurAjoutee valeurAjoutee photo"
+      "photo valeurAjoutee valeurAjoutee"
       "competences competences langues"
       "formation formation formation"
       "tp tp tp"
@@ -78,70 +79,221 @@ header nav ul li a:hover, footer nav ul li a:hover {
       "jeux lecture ."
       "projets projets projets"
       "exemple exemple exemple"
-      "cvpdf cvpdf retour";
+      "cvpdf cvpdf cvpdf";
 }
-  
-  .titre { 
-    grid-area: titre;
-    background-color: blue;
-    
-    
-    
- }
-  
-  .citation { grid-area: citation; background-color: red;}
-  
-  .valeurAjoutee { grid-area: valeurAjoutee; background-color: pink;}
-  
-  .photo { grid-area: photo;background-color: violet; }
-  
-  .competences { grid-area: competences; background-color: green;}
-  
-  .langues { grid-area: langues;background-color: greenyellow; }
-  
-  .formation { grid-area: formation; background-color: yellow;}
-  
-  .tp { grid-area: tp;background-color: purple; }
-  
-  .dts { grid-area: dts; background-color: lightseagreen; }
-  
-  .bafa { grid-area: bafa; background-color: lightslategray;}
-  
-  .bac { grid-area: bac;background-color: orange;}
-  
-  .experience { grid-area: experience; background-color: burlywood;}
-  
-  .stage { grid-area: stage; background-color: lawngreen;}
-  
-  .manip { grid-area: manip;background-color: fuchsia; }
-  
-  .etudiant { grid-area: etudiant; background-color: darkgoldenrod;}
-  
-  .anim { grid-area: anim;background-color: powderblue; }
-  
-  .caisse { grid-area: caisse;background-color: palegreen; }
-  
-  .interets { grid-area: interets;background-color: slateblue; }
-  
-  .amhe { grid-area: amhe;background-color: silver; }
-  
-  .danse { grid-area: danse; background-color: lavender;}
-  
-  .jdr { grid-area: jdr;background-color: olivedrab; }
-  
-  .jeux { grid-area: jeux;background-color: maroon; }
-  
-  .lecture { grid-area: lecture; background-color: mediumvioletred;}
-  
-  .projets { grid-area: projets;background-color: midnightblue; }
-  
-  .exemple { grid-area: exemple;background-color: aqua; }
-  
-  .cvpdf { grid-area: cvpdf;background-color: aquamarine; }
-  
-  .retour { grid-area: retour; background-color: gold;}
-
-  .itemM{
+.itemM{
     width: 100%;
-  }
-  
+    background-color: #eeeeee;
+}
+.titre { 
+    grid-area: titre;
+    text-align: center;
+    margin-bottom: 10%;
+}
+h1 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: 'Oregano', cursive;
+    font-size: 10em;
+    color: #1a4258e1;
+}
+h2 {
+    margin: 3% 20%;
+    font-family: 'Oregano', cursive;
+    font-size: 5em;
+    color: #1a4258e1;
+    text-align: center;
+}
+h3, h5 {
+    font-size: 1.7em;
+    color: #1a4258e1;
+    text-align: center;
+}
+h5 {
+    font-size:1,5em ;
+}
+.citation { 
+    grid-area: citation; 
+    color: #414141;
+    text-align: center;
+    place-self: center;
+    padding: 5%;
+    margin-bottom: 5%;
+}
+q {
+    font-family: 'Literata', serif;
+    font-size: 1.9em;
+    quotes: "«\00A0" "\00A0»";
+}
+.photo { 
+    grid-area: photo; 
+    text-align: center;
+}
+.photo img{
+    border-radius: 25%;
+    padding-bottom: 2%;
+}
+.valeurAjoutee { 
+    grid-area: valeurAjoutee; 
+    padding:3% 40% 5% 0;
+    font-size: 1.5em;
+    text-align: justify;
+}
+.competences { 
+    grid-area: competences; 
+}
+.competences ul li {
+    background: url("../img/cochebleue.png") no-repeat bottom left;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 1.5% 4% 0% 25%;
+    background-position: 21% 100%;
+}
+.langues { 
+    grid-area: langues;
+}
+.langues h2 {
+    text-align: left;
+    margin: 4%;
+}
+.langues ul {
+    margin-top: 8%;
+    font-size: 1.5em;
+}
+.langues ul li {
+    margin-bottom: 1.5%;
+}
+.formation { 
+    grid-area: formation; 
+}
+.tp { 
+    grid-area: tp; 
+    text-align: center;
+}
+.tp p, .dts p, .bafa p, .bac p, .stage p, .manip p, .anim p, .caisse p {
+    font-size: 1.3em;
+    margin: 1.5%;
+    text-align: center;
+}
+
+.tp ul li, .stage ul li, .manip ul li, .anim ul li, .caisse ul li {
+    text-align: justify;
+    font-size: 1.2em;
+    margin-left: 32%;
+    margin-bottom: 1%;
+}
+.dts { 
+    grid-area: dts; 
+    text-align: center;
+}
+.bafa { 
+    grid-area: bafa; 
+    text-align: center;
+}
+.bafa h3 {
+    text-align: left;
+}
+.bac { 
+    grid-area: bac;
+}
+.experience { 
+    grid-area: experience;
+}
+.stage { 
+    grid-area: stage; 
+}
+.manip { 
+    grid-area: manip;
+}
+.manip .link, .cvpdf .link {
+    text-align: center;
+    margin:3%;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+}
+.manip .link a, .cvpdf .link a {
+    border: #87838374 1px solid;
+    border-radius: 15px;
+    padding:1%;
+}
+.etudiant { 
+    grid-area: etudiant; 
+}
+.etudiant h3{
+    margin-left: -5%;
+}
+.anim { 
+    grid-area: anim;
+}
+.anim h3, .caisse h3, .caisse p, .caisse ul li {
+    text-align: right;
+}
+.anim p, .anim ul li {
+    margin-left: 35%;
+}
+.caisse { 
+    grid-area: caisse;
+}
+.interets { 
+    grid-area: interets;
+}
+.amhe { 
+    grid-area: amhe;
+}
+.danse { 
+    grid-area: danse; 
+}
+.jdr { 
+    grid-area: jdr;
+}
+.jeux { 
+    grid-area: jeux;
+}
+.lecture { 
+    grid-area: lecture; 
+}
+figure img {
+    max-width: 70%;
+    height: 50%;
+}
+details {
+    margin-left: 2%;
+    font-size: 1.2em;
+}
+.projets { 
+    grid-area: projets;
+}
+.exemple { 
+    grid-area: exemple;
+    text-align: center;
+    font-size: 1.2em;
+}
+.cvpdf { 
+    grid-area: cvpdf;
+}
+#retour { 
+   position: absolute; 
+   bottom: 70px;
+   right: 10px;
+   width: 100px;
+    
+    
+}
+#retour:hover{
+    content: url("../img/chatmontee.png");
+    cursor: pointer;
+    width: 100px;
+}
+@media (max-width:700px){
+    #menu {
+        display: none;
+    }
+    #menuMobile {
+        display: block;
+        width: 100vh;
+    }
+    #menuMobile select {
+        width: 95%;
+    }
+}
