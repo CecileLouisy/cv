@@ -1,0 +1,52 @@
+
+
+
+ /*Formulaire*/
+ .formulaire {
+    display: grid;
+    grid-template-columns:0.15fr 1fr 1fr 0.15fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+    gap: 5px 5%; 
+    grid-template-areas: 
+    ". nom sujet ."
+    ". prenom message ."
+    ". email message ."
+    ". telephone message ."
+    ". envoyer . ."; 
+}
+
+.nom { 
+    grid-area: nom;
+    
+ }
+ .sujet { 
+    grid-area: sujet;
+    
+ }
+ .prenom { 
+    grid-area: prenom;
+    
+ }
+ .message { 
+    grid-area: message;
+    
+ }
+ .email { 
+    grid-area: email;
+    
+ }
+ .telephone { 
+    grid-area: telephone;
+    
+ }
+
+ .button {
+    grid-area: envoyer;
+ }
+
+
+
+
+
+
+
