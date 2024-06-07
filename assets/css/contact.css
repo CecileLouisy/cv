@@ -1,20 +1,27 @@
 body {
    background-color: #eeeeee;
 }
+
 h1 {
    font-size: 3em;
-   margin:2%;
+   margin: 2%;
    text-align: center;
    margin-bottom: 5%;
 }
-label, input, button, textarea {
+
+label,
+input,
+button,
+textarea {
    font-size: 1.5em;
 }
+
 input {
    width: 90%;
 }
+
 /*Form Design*/
-.formulaire {  
+.formulaire {
    border: #87838374 1px solid;
    border-radius: 15px;
    padding: 2%;
@@ -26,45 +33,52 @@ input {
    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
    gap: 0px 0px;
    grid-template-areas:
-     "nom sujet"
-     "prenom message"
-     "email message"
-     "telephone message"
-     "envoyer message";
+      "nom sujet"
+      "prenom message"
+      "email message"
+      "telephone message"
+      "envoyer message";
 }
-.nom { 
-   grid-area: nom; 
+
+.nom {
+   grid-area: nom;
 }
-.prenom { 
-   grid-area: prenom; 
+
+.prenom {
+   grid-area: prenom;
 }
-.email { 
-   grid-area: email; 
+
+.email {
+   grid-area: email;
 }
-.telephone { 
-   grid-area: telephone; 
+
+.telephone {
+   grid-area: telephone;
 }
-.sujet { 
-   grid-area: sujet; 
+
+.sujet {
+   grid-area: sujet;
 }
-.message { 
-   grid-area: message; 
+
+.message {
+   grid-area: message;
 }
-.envoyer { 
-   grid-area: envoyer; 
+
+.envoyer {
+   grid-area: envoyer;
 }
+
 button {
    border: #87838374 1px solid;
    border-radius: 15px;
-   padding:1%;
+   padding: 1%;
    width: 50%;
    margin-left: 20%;
    background-color: #fff;
 }
+
 button:hover {
    font-size: 1.8em;
    border-color: #45aee7;
    cursor: pointer;
 }
-
- 
